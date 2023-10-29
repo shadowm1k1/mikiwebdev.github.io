@@ -1,4 +1,5 @@
-console.log("hello");
+
+
 
 function Button_Click()
 { 
@@ -6,7 +7,4 @@ function Button_Click()
   var Password = document.getElementById('Password').value;
   console.log("Username = " + Username);
   console.log("Password = " + Password);
-
-  
-
 }
