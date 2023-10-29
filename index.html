@@ -1,44 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="mystyle.css">
-    <script src="code.js"></script> 
-    <script type="module"> //connection to Firebase 
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
-        import { getDatabase,ref,set } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";//GETTING THE FUNCTION FROM THE WEB PAGE
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-    
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-        databaseURL: "https://druckwelle-ddf12-default-rtdb.firebaseio.com/", //LINK OF THE DATABASE
-        apiKey: "AIzaSyB90rXGrYRXjrgc0cuYDlyePl62cgeLBU0",
-        authDomain: "druckwelle-ddf12.firebaseapp.com",
-        projectId: "druckwelle-ddf12",
-        storageBucket: "druckwelle-ddf12.appspot.com",
-        messagingSenderId: "463864394623",
-        appId: "1:463864394623:web: b51c87fccc6e93dee0e04a",
-        measurementId: "G-5TS8KSX7S0"
-        };
-
-    
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const database = getDatabase(app);
-
-        function writeUserData(userId, name, email) 
-        {
-            set(ref(database, '/users' + userId), {
-                username: name,
-                email: email,
-             });
-        }   
-    </script>
-</head>
     <body>
+        <link rel="stylesheet" href="mystyle.css">
         <script src="code.js"></script>
+        <script type="module" >
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+            import {  } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+        
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+            apiKey: "AIzaSyB90rXGrYRXjrgc0cuYDlyePl62cgeLBU0",
+            authDomain: "druckwelle-ddf12.firebaseapp.com",
+            databaseURL: "https://druckwelle-ddf12-default-rtdb.firebaseio.com",
+            projectId: "druckwelle-ddf12",
+            storageBucket: "druckwelle-ddf12.appspot.com",
+            messagingSenderId: "463864394623",
+            appId: "1:463864394623:web:b51c87fccc6e93dee0e04a",
+            measurementId: "G-5TS8KSX7S0"
+            };
+        
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+        </script>
 
         <h1>DRUCKWELLE</h1>
         <h2>Username</h2>
@@ -47,6 +35,9 @@
         <input type="password" id = "Password"><br></br>
         <button  onclick="Button_Click()">Sign in</button> 
 
+        <script>
+            
+        </script>
         
         
     </body>
