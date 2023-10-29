@@ -6,7 +6,7 @@
     <script type="module"> //connection to Firebase 
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
-        import { getDatabase } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";//GETTING THE FUNCTION FROM THE WEB PAGE
+        import { getDatabase,ref,set } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";//GETTING THE FUNCTION FROM THE WEB PAGE
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
     
@@ -19,13 +19,22 @@
         projectId: "druckwelle-ddf12",
         storageBucket: "druckwelle-ddf12.appspot.com",
         messagingSenderId: "463864394623",
-        appId: "1:463864394623:web:b51c87fccc6e93dee0e04a",
+        appId: "1:463864394623:web: b51c87fccc6e93dee0e04a",
         measurementId: "G-5TS8KSX7S0"
         };
+
     
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const database = getDatabase(app);
+
+        function writeUserData(userId, name, email) 
+        {
+            set(ref(database, '/users' + userId), {
+                username: name,
+                email: email,
+             });
+        }   
     </script>
 </head>
     <body>
@@ -37,7 +46,6 @@
         <h2> Password</h2>
         <input type="password" id = "Password"><br></br>
         <button  onclick="Button_Click()">Sign in</button> 
-      
 
         
         
