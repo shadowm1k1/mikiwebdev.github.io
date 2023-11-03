@@ -25,3 +25,8 @@ h1 {
     text-decoration: underline;
     font-size: 16px;
   }
+
+  .wrapper 
+  {
+    align-items: center;
+  }
