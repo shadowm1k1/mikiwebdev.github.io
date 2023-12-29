@@ -22,6 +22,7 @@ function addHeart()
 
   const circle1 = document.createElement("div");
   
+  
   circle1.style.width = "100px";
   circle1.style.height = "100px";
   circle1.style.borderRadius = "50%";
