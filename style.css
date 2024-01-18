@@ -19,6 +19,7 @@ body{
   height: 200pt;
   width: 300pt;
   margin: auto;
+  padding: 20pt;
 }
 
 .aboutMeTitle{
@@ -54,7 +55,6 @@ body{
   left: 300pt;
   top: -150pt;
   border: 5px solid rgb(255, 106, 255);
-  padding-right: 20pt;
 
   
 }
