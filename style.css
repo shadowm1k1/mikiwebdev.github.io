@@ -33,6 +33,7 @@ body{
 
 .aboutMeText
 {
+  width: 100%;
   font-size: 18pt;
   text-align: left;
   
