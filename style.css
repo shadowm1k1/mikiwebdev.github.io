@@ -3,7 +3,6 @@ body{
   text-align: center;
   width: 100%;
   height: 100%;
-  padding: 0pt, 20pt,20pt 20pt;
 }
 
 .pageTitle{
@@ -18,7 +17,7 @@ body{
 .aboutMeSection
 {
   height: 200pt;
-  width: 30%;
+  width: 200pt;
   margin: auto;
 }
 
