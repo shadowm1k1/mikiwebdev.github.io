@@ -34,10 +34,9 @@ body{
 
 .aboutMeText
 {
-  width: 300pt;
+  width: 400pt;
   font-size: 18pt;
   text-align: left;
-  
 }
 
 .myProjects{
@@ -53,7 +52,7 @@ body{
 {
   height: 300px;
   position: relative;
-  left: 300pt;
+  left: 400pt;
   top: -150pt;
   border: 5px solid rgb(255, 106, 255);
 
