@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(221, 218, 218);
+  background-color: rgb(255, 255, 255);
   text-align: center;
   
 }
@@ -7,19 +7,43 @@ body{
 .pageTitle{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40pt;
-  color: white;
+  font-weight: 1000;
+  color: #7ef0d4;
   text-decoration-line: underline;
-  text-decoration-color: purple;
+  text-decoration-color: rgb(255, 106, 255);
   text-transform: uppercase;
-  text-shadow: 2px 2px 5px black;
+}
+.myPic
+{
+  height: 200pt;
+  position: absolute;
+  top: 10%;
+  right: 30%;
+  border: 5px solid rgb(255, 106, 255);
+
+  
+}
+.aboutMeSection
+{
+  height: 200pt;
+  width: 30%;
+  margin: auto;
 }
 
-.aboutMe{
+.aboutMeTitle{
   padding-top: 30pt;
   color: black;
-  font-size: 20pt;
+  font-size: 30pt;
   text-transform: uppercase;
   text-decoration-line: underline;
+  padding-bottom: 20pt;
+  
+}
+
+.aboutMeText
+{
+  font-size: 18pt;
+  text-align: left;
   
 }
 
