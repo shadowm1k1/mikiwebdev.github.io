@@ -1,9 +1,8 @@
 body{
   background-color: rgb(255, 255, 255);
   text-align: center;
-  width: 100%;
+  width:100%;
   height: 100%;
-  padding-left: 200pt;
 }
 
 .pageTitle{
@@ -34,7 +33,7 @@ body{
 
 .aboutMeText
 {
-  width: 100%;
+  width: 300pt;
   font-size: 18pt;
   text-align: left;
   
