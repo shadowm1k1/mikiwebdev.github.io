@@ -26,7 +26,8 @@ body{
 }
 
 .aboutMeTitle{
-  padding-top: 30pt;
+  
+  padding-top: 20pt;
   color: black;
   font-size: 30pt;
   font-weight: 1000;
@@ -39,6 +40,7 @@ body{
 .aboutMeText
 {
   padding-top: 20pt;
+  padding-left: 20pt;
   width: 400pt;
   font-size: 18pt;
   text-align: left;
