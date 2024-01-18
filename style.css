@@ -11,7 +11,7 @@ body{
   font-weight: 1000;
   color: #7ef0d4;
   text-decoration-line: underline;
-  text-decoration-color: rgb(255, 106, 255);
+  text-decoration-color: rgb(145, 145, 145);
   text-transform: uppercase;
 }
 .aboutMeSection
@@ -40,7 +40,7 @@ body{
 }
 
 .myProjects{
-  padding-top: 30pt;  
+  padding-top: 50pt;  
   color:black;
   font-size: 30pt;
   font-weight: 1000;
@@ -54,7 +54,7 @@ body{
   position: relative;
   left: 400pt;
   top: -150pt;
-  border: 5px solid rgb(255, 106, 255);
+  border: 5px solid rgb(123, 123, 123);
 
   
 }
