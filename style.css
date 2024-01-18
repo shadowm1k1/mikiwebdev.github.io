@@ -9,23 +9,20 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40pt;
   font-weight: 1000;
-  color: #7ef0d4;
-  text-decoration-line: underline;
-  text-decoration-color: rgb(145, 145, 145);
+  color: #000000;
   text-transform: uppercase;
 }
 .aboutMeSection
 {
   height: 250pt;
   width: 400pt;
-  
-  margin: auto;
-  border:2px solid black;
+  margin: 5% auto;
+  border:2px solid rgba(0,0,0,30%);
   border-radius: 10%;
-  
 }
 
 .aboutMeTitle{
+  
   
   padding-top: 20pt;
   color: black;
@@ -46,7 +43,17 @@ body{
   text-align: left;
 }
 
-.myProjects{
+.myProjectsSection
+{
+  margin: -2% auto;
+  height: 400pt;
+  width: 400pt;
+  border: 2px solid rgba(0,0,0,30%);
+  border-radius: 10%;
+}
+
+.myProjectsTitle{
+  
   padding-top: 50pt;  
   color:black;
   font-size: 30pt;
@@ -55,13 +62,32 @@ body{
   text-decoration-line: underline;
 }
 
+.myProjectsText
+{
+  font-size: 18pt;
+  padding-top: 20pt;
+  padding-left: 20pt;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
 .myPic
 {
-  height: 300px;
   position: relative;
-  left: 400pt;
-  top: -150pt;
-  border: 5px solid rgb(123, 123, 123);
+  top: 20pt;
+  height: 300px;
 
+  padding-top: 30pt;
+  padding-bottom: 30pt;
+  padding-left: 130pt;
+  padding-right: 130pt;
   
+  border-radius: 10%;
+  border: 2px solid rgba(0,0,0,30%);
 }
