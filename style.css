@@ -13,16 +13,6 @@ body{
   text-decoration-color: rgb(255, 106, 255);
   text-transform: uppercase;
 }
-.myPic
-{
-  height: 200pt;
-  position: absolute;
-  top: 10%;
-  right: 30%;
-  border: 5px solid rgb(255, 106, 255);
-
-  
-}
 .aboutMeSection
 {
   height: 200pt;
@@ -53,4 +43,15 @@ body{
   font-size: 20pt;
   text-transform: uppercase;
   text-decoration-line: underline;
+}
+
+.myPic
+{
+  height: 200pt;
+  position: relative;
+  left: 200pt;
+  top: -150pt;
+  border: 5px solid rgb(255, 106, 255);
+
+  
 }
