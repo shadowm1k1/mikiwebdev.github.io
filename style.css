@@ -3,7 +3,7 @@ body{
   text-align: center;
   width: 100%;
   height: 100%;
-  padding: 200%;
+  padding: 0pt, 20pt,20pt 20pt;
 }
 
 .pageTitle{
