@@ -19,13 +19,13 @@ body{
   height: 200pt;
   width: 300pt;
   margin: auto;
-  padding: 20pt;
 }
 
 .aboutMeTitle{
   padding-top: 30pt;
   color: black;
   font-size: 30pt;
+  font-weight: 1000;
   text-transform: uppercase;
   text-decoration-line: underline;
   padding-bottom: 20pt;
@@ -43,7 +43,8 @@ body{
 .myProjects{
   padding-top: 30pt;  
   color:black;
-  font-size: 20pt;
+  font-size: 30pt;
+  font-weight: 1000;
   text-transform: uppercase;
   text-decoration-line: underline;
 }
