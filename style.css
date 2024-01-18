@@ -16,9 +16,13 @@ body{
 }
 .aboutMeSection
 {
-  height: 200pt;
-  width: 300pt;
+  height: 250pt;
+  width: 400pt;
+  
   margin: auto;
+  border:2px solid black;
+  border-radius: 10%;
+  
 }
 
 .aboutMeTitle{
@@ -28,12 +32,13 @@ body{
   font-weight: 1000;
   text-transform: uppercase;
   text-decoration-line: underline;
-  padding-bottom: 20pt;
+  
   
 }
 
 .aboutMeText
 {
+  padding-top: 20pt;
   width: 400pt;
   font-size: 18pt;
   text-align: left;
