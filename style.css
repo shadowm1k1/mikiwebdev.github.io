@@ -1,15 +1,85 @@
+*{
+ margin: 0px;
+ padding: 0px; 
+}
+
 body{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   text-align: center;
-  width:100%;
+  max-width: 100%;
+  overflow-x: hidden;
   height: 100%;
 }
 
+.row
+{
+  display: inline-flex;
+  margin-top: -32px;
+  margin-left: -50px;
+}
+
+.row:nth-child(even){
+  margin-left: 2px;
+}
+
+.hexagon{
+  width: 100px;
+  height: 110px;
+  margin: 2px;
+  background-color: rgb(20, 20, 20);
+  clip-path: polygon(50% 0,100% 25%,100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  animation: animation 4s linear infinite;
+  transition: 1s;
+}
+.hexagon:hover{
+  background-color: #0f0;
+  transition:0s;
+}
+
+@keyframes animation
+{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{filter: hue-rotate(360deg);}
+}
+
+.hexagon:after
+{
+  content:'';
+  position:absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  background-color: #111;
+  clip-path: polygon(50% 0,100% 25%,100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon.before
+{
+  content:'';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.03);
+  z-index: 2;
+}
+
+
 .pageTitle{
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+
+  position: absolute;
+  left: 45%;
+  top:2%;
+  z-index: 2;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40pt;
   font-weight: 1000;
-  color: #000000;
+  color: #ffffff;
   text-transform: uppercase;
 }
 .aboutMeSection
@@ -17,7 +87,7 @@ body{
   height: 250pt;
   width: 400pt;
   margin: 5% auto;
-  border:2px solid rgba(0,0,0,30%);
+  border:2px solid rgb(255, 255, 255);
   border-radius: 10%;
 }
 
@@ -25,7 +95,7 @@ body{
   
   
   padding-top: 20pt;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 30pt;
   font-weight: 1000;
   text-transform: uppercase;
@@ -36,6 +106,7 @@ body{
 
 .aboutMeText
 {
+  color: white;
   padding-top: 20pt;
   padding-left: 20pt;
   width: 400pt;
@@ -48,14 +119,14 @@ body{
   margin: -2% auto;
   height: 400pt;
   width: 400pt;
-  border: 2px solid rgba(0,0,0,30%);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 10%;
 }
 
 .myProjectsTitle{
   
   padding-top: 50pt;  
-  color:black;
+  color:rgb(255, 255, 255);
   font-size: 30pt;
   font-weight: 1000;
   text-transform: uppercase;
@@ -64,18 +135,12 @@ body{
 
 .myProjectsText
 {
+  color:white;
   font-size: 18pt;
   padding-top: 20pt;
   padding-left: 20pt;
   text-align: left;
 }
-
-
-
-
-
-
-
 
 .myPic
 {
@@ -89,5 +154,5 @@ body{
   padding-right: 130pt;
   
   border-radius: 10%;
-  border: 2px solid rgba(0,0,0,30%);
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
