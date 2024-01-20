@@ -9,6 +9,11 @@ body{
   max-width: 100%;
   overflow-x: hidden;
   height: 100%;
+  text-rendering: optimizeLegibility;
+
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
 }
 
 .row
@@ -66,11 +71,9 @@ body{
   z-index: 2;
 }
 
-
 .pageTitle{
-  -webkit-user-select: none; 
-  -ms-user-select: none; 
-  user-select: none;
+  width: 700px;
+  margin: 0% -10%;
 
   position: absolute;
   left: 47%;
@@ -82,77 +85,53 @@ body{
   color: #000000;
   text-transform: uppercase;
 }
-.aboutMeSection
-{
-  height: 250px;
-  width: 400px;
-  margin: 5% auto;
-  border:2px solid rgb(0, 0, 0);
-  border-radius: 10%;
-}
-
-.aboutMeTitle{
-  
-  
-  padding-top: 20px;
-  color: rgb(0, 0, 0);
-  font-size: 30px;
-  font-weight: 1000;
-  text-transform: uppercase;
-  text-decoration-line: underline;
-  
-  
-}
-
-.aboutMeText
-{
-  color: white;
-  padding-top: 20px;
-  padding-left: 20px;
-  width: 400px;
-  font-size: 18px;
-  text-align: left;
-}
-
-.myProjectsSection
-{
-  margin: -2% auto;
-  height: 400px;
-  width: 400px;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 10%;
-}
-
-.myProjectsTitle{
-  
-  padding-top: 50px;  
-  color:rgb(255, 255, 255);
-  font-size: 30px;
-  font-weight: 1000;
-  text-transform: uppercase;
-  text-decoration-line: underline;
-}
-
-.myProjectsText
-{
-  color:rgb(255, 255, 255);
-  font-size: 18px;
-  padding-top: 20px;
-  padding-left: 20px;
-  text-align: left;
-}
-
-.myPic
-{
-  height: 500px;
-}
-
 
 .wrapperPic
 {
-  height: 500px;
+  height: 300px;
   position: absolute;
   top: 100px;
   left: 100px;
   
 }
+
+.hoverToSeeMore{
+  width: 400px;
+  height: 30px;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  animation: colapseInfo 0.4s backwards;
+  background-color: rgba(235, 235, 235, 0.699);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 1000;
+}
+.hoverToSeeMore:hover{  
+  animation: extandInfo 0.4s forwards;
+}
+@keyframes extandInfo {
+  
+  0%{
+    height: 30px;
+  }
+  100%{
+    height: 100%;
+  }
+}
+@keyframes colapseInfo {
+  0%{
+    height: 100%;
+  }
+  100%{
+    height: 30px;
+  }
+}
+
+
+
+.myPic{
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+}
+
