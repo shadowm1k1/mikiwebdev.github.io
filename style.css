@@ -86,7 +86,7 @@ body{
   text-transform: uppercase;
 }
 
-.wrapperPic
+.wrapperPicInfo
 {
   height: 300px;
   position: absolute;
@@ -94,9 +94,14 @@ body{
   left: 100px;
   
 }
+.myPic{
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 20px;
+}
 
 .hoverToSeeMore{
-  width: 400px;
+  width: 500px;
   height: 30px;
   position: absolute;
   top: 0px;
@@ -104,8 +109,10 @@ body{
   animation: colapseInfo 0.4s backwards;
   background-color: rgba(235, 235, 235, 0.699);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
+  font-size: 24px;
+  color: black;
   font-weight: 1000;
+  border-radius: 20px;
 }
 .hoverToSeeMore:hover{  
   animation: extandInfo 0.4s forwards;
@@ -117,6 +124,7 @@ body{
   }
   100%{
     height: 100%;
+    
   }
 }
 @keyframes colapseInfo {
@@ -128,10 +136,37 @@ body{
   }
 }
 
-
-
-.myPic{
+.info{
   height: 300px;
-  background-color: rgb(255, 255, 255);
+  width: 500px;
+  
+  position: absolute;
+  top:0px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0);
+  
 }
+.info:hover{
+  animation: showText 1s forwards;
+}
+
+@keyframes showText {
+  0%{
+    color: transparent;
+  }
+  20%{
+    color: transparent;
+  }
+  100%{
+    color: black;
+  }
+}
+
+.infoText{
+  text-align: left;
+  position: absolute;
+  top: 40px; 
+  margin-left: 20px;
+}
+
 
