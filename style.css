@@ -86,7 +86,7 @@ body{
   text-transform: uppercase;
 }
 
-.wrapperPicInfo
+.wrapper
 {
   height: 300px;
   position: absolute;
@@ -94,11 +94,7 @@ body{
   left: 100px;
   
 }
-.myPic{
-  height: 300px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-}
+
 .hintTrigger{
   position: absolute;
   width: 500px;
@@ -122,6 +118,12 @@ body{
 .hint:hover{
   color: transparent;
   transition: 0.2s;
+}
+
+.myPic{
+  height: 300px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
 }
 
 .infoMe{
@@ -193,22 +195,7 @@ body{
   margin-left: 20px;
 }
 
-.skills{
-  position: absolute;
-  left: 1500px;
-  height: 300px;
-  width: 180px;
-  font-size: 24px;
-  font-weight: 1000;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: rgba(211, 211, 211, 0.651);
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-}
 
-.skillsSymbol{
-  position: relative;
-  top: 30px;
 
-}
+
 
