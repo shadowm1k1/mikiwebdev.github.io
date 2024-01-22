@@ -619,6 +619,14 @@
                 alert("For better user expirience please use a PC or Laptop");
                 document.getElementById("hexagonContainer").style.display = "none";
             }
+
+            window.onload = (event) => {
+                target = document.querySelectorAll('.hexagon');
+                var i= 10;
+                while(i < 100){
+                    target[random].style.backgroundColor = 'green'; i++;
+                }
+            };
             
         </script>
 
