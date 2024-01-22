@@ -17,6 +17,10 @@ body{
   user-select: none;
 }
 
+.mobileContainer{
+  background-color: rgb(204, 204, 204);
+}
+
 .row
 {
   display: inline-flex;
