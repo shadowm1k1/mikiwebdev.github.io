@@ -616,9 +616,7 @@
 
         
         <script>
-            var x = 1;
-            while(x)
-            {   
+            window.onload = function(){  
                 function isMobile() {
                 const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
                 return regex.test(navigator.userAgent);
@@ -629,8 +627,8 @@
                 } else {
                 console.log("Desktop device detected");
                 }
-                x= 0;
-            }
+            };
+            
         </script>
     </body>  
 </html>
