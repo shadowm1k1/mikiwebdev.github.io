@@ -9,12 +9,9 @@
         
 
     </head>
-    <body>
-        <div class="mobileContainer">
-            
-        </div>
+    <body>d
         <div class="desktopContainer">
-            <div class="container">  
+            <div class="hexagonContainer" id = "hexagonContainer">  
                 <div class="row">
                     <div class="hexagon"></div>
                     <div class="hexagon"></div>
@@ -613,18 +610,19 @@
                 </div>
             </div>
         </div>
-
+        
         
         <script>
             function isMobileDevice() {
                 return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
             }
+
             if (isMobileDevice()) {
-                document.write("<h1>Open on PC</h1>");
-            } else {
-                document.write("<h1>welcome</h1>");
+                
+                document.getElementById("hexagonContainer").style.display = "none";
             }
             
         </script>
+
     </body>  
 </html>
