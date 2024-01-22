@@ -619,12 +619,12 @@
         <script>
             $(document).ready(function(){
                 if(jQuery.browser.mobile) {
-                    jQuery('#mobileContainer').show();
-                    jQuery('#desktopContainer').hide();
+                    document.getElementById("desktopContainer").hidde();
+                    document.getElementById("mobileContainer").show();
                 }
                 else{
-                    jQuery('#desktopContainer').show();
-                    jQuery('#mobileContainer').hide();
+                    document.getElementById("desktopContainer").show();
+                    document.getElementById("mobileContainer").hide();
                 }
             });
         </script>
