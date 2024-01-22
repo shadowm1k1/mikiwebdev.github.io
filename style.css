@@ -9,6 +9,7 @@ body{
   max-width: 100%;
   overflow-x: hidden;
   height: 100%;
+  width: 100%;
   text-rendering: optimizeLegibility;
 
   -webkit-user-select: none; 
