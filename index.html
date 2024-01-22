@@ -5,6 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        	
+        <style media="all">
+            .mobileContainer{display:none}
+            .desktopContainer{display:block}
+            @media (max-width:800px){
+            .desktopContainer {display:none}
+            .mobileContainer {display:block}
+            }
+            </style>
         <title>Home</title>
 
     </head>
@@ -614,15 +623,6 @@
 
         </div>
         <script>
-            jQuery(document).ready(function () {
-
-            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera 
-            Mini/i.test(navigator.userAgent) ) {
-                jQuery('#mobileConatiner').show();
-            }else{
-                jQuery('#desktopConatiner').show();
-            }
-            });
         </script>
     </body>  
 </html>
