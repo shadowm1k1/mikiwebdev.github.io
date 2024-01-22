@@ -620,9 +620,11 @@
             $(document).ready(function(){
                 if(jQuery.browser.mobile) {
                     jQuery('#mobileContainer').show();
+                    jQuery('#desktopContainer').hide();
                 }
                 else{
                     jQuery('#desktopContainer').show();
+                    jQuery('#mobileContainer').hide();
                 }
             });
         </script>
